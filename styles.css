@@ -17,22 +17,17 @@ body {
 }
 
 input[type="text"] {
+    grid-row: 1 / -1;
     background-color: rgba(245, 184, .1);
     border-radius: .5rem;
-    display: grid;
-    grid-row: 2 / 4;
+    /* display: grid; */
     width: 25rem;
     height: 1.5rem;
     font-size: 15px;
 }
 
-.search-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 button {
+    grid-column: -1;
     font-family: 'Rubik', sans-serif;
     appearance: none;
     background-color: transparent;
@@ -78,20 +73,21 @@ header {
     background-color: rgba(255, 255, 255, 0.74);
     box-shadow: 2px 3px 3px gray;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-column: 2 / 4;
     padding: 1rem;
 }
 
 .header-info {
+    display: grid;
+    grid-row: 2;
     padding: 1rem;
 }
 
 .top-right-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    justify-self: flex-end;
+    justify-self: end;
 }
 
 .top-right-info>p {
