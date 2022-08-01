@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +12,10 @@
 
 body {
     display: grid;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Rubik', sans-serif;
     height: 100vh;
+    /* background-color: rgba(191, 192, 192, .6); */
+
 }
 
 input[type="text"] {
@@ -19,6 +23,8 @@ input[type="text"] {
 }
 
 header {
+    background-color: rgba(255, 255, 255, 0.74);
+    box-shadow: 2px 3px 3px gray;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column: 2 / 4;
@@ -34,7 +40,7 @@ header {
 }
 
 .sidebar {
-    background-color: rgba(244, 151, 142, .8);
+    background-color: rgb(245, 184, .7);
     display: flex;
     flex-direction: column;
     grid-row: 1 / span 3;
@@ -46,45 +52,53 @@ header {
 }
 
 .main-content {
-    background-color: rgba(191, 192, 192, .5);
     display: grid;
-    padding: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr 1fr));
-    height: fit-content;
+    grid-template-rows: auto 1fr;
+
 }
 
 .main-content>h3 {
     display: grid;
-    padding-left: 1rem;
+    justify-self: flex-start;
+    margin: 1rem 1rem;
+    text-decoration: underline 2px;
 }
 
 .card {
-    background-color: white;
+    border-style: solid;
     border-radius: 5px;
     padding: 20px;
 }
 
-.right-title>p {
-    background-color: white;
-}
-
 .article {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 1rem;
-    /* padding: 1rem; */
-}
-
-.right-side-content {
-    background-color: rgba(191, 192, 192, .5);
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr 1fr));
     padding: 1rem;
     height: fit-content;
 }
 
+.right-side-content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr 1fr)); */
+    /* height: 25rem; */
+    width: 23rem;
+    margin: .5rem;
+}
+
 .right-side-content>h3 {
+    padding: 1rem;
+    text-decoration: underline 2px;
+}
+
+.trending-users>h3 {
     display: grid;
-    align-self: flex-start;
+    padding: 1rem;
+    text-decoration: underline 2px;
+}
+
+ul>li {
+    padding: 15px;
 }
