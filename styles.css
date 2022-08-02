@@ -86,6 +86,7 @@ header {
     grid-template-columns: 1fr;
     grid-row: 2;
     padding: 1rem;
+
 }
 
 .header-info>p {
@@ -102,6 +103,28 @@ header {
     width: 50px;
     border: solid;
     border-radius: 8px;
+}
+
+#profile-pic-3 {
+    width: 50px;
+    border: solid;
+    border-radius: 8px;
+}
+
+#profile-pic-4 {
+    width: 50px;
+    border: solid;
+    border-radius: 8px;
+}
+
+#profile-pic-5 {
+    width: 50px;
+    border: solid;
+    border-radius: 8px;
+}
+
+.bell-icon {
+    padding: 1rem;
 }
 
 .headerBtns {
@@ -122,9 +145,8 @@ header {
 }
 
 .top-right-info>h3 {
-    display: grid;
-    align-self: flex-end;
     padding: .5rem;
+    align-self: center;
 }
 
 .search-bar {
@@ -167,7 +189,7 @@ header {
 .card {
     border-style: solid;
     border-radius: 5px;
-    padding: 20px;
+    padding: 5px;
 }
 
 .card-icons,
@@ -204,6 +226,10 @@ header {
     display: grid;
     padding: 1rem;
     text-decoration: underline 2px;
+}
+
+.trending-users>.card {
+    display: flex;
 }
 
 ul>li {
